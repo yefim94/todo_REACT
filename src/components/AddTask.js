@@ -17,7 +17,9 @@ const AddTask = ({todos, setTodos, setInputText, inputText}) => { // passing in 
   return (
       <form className="add-task-cont" onSubmit={submitHandler}>
         <button className="left-add" type="submit">
-          <i class="fas fa-plus"></i>
+          <i class="fas fa-plus" style={{
+            fontSize: "1.3em"
+          }}></i>
           <h3>Add Task </h3>
         </button>
         <div className="right-add">

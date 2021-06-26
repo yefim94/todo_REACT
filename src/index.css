@@ -7,6 +7,9 @@
 .body > *, .body > * > * {
   transition: all 1s ease-in-out;
 }
+:root {
+  font-size: 16px;
+}
 body {
   background-color: #6378C2;
   display: flex;
@@ -53,8 +56,8 @@ button[class^="left"] {
   color: white;
   cursor: pointer;
 }
-button[class^="left"]  >h3 {
-  font-size: 1.6em;
+button[class^="left"]  > h3 {
+  font-size: 1.3em;
 }
 .right-add {
   border-radius: 10px;
@@ -114,5 +117,10 @@ button[class^="left"]  >h3 {
   }
   to {
     color: red;
+  }
+}
+@media screen and (max-width: 583px) {
+  :root {
+    font-size: 6px;
   }
 }
